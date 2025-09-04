@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>videopage</title>
+<style>
+	#page {
+		height: 700px;
+		width: 1000px;
+		margin: 0 auto;
+		// padding: 48px;
+	} body {
+		background-image: url("test site background.png");
+		background-repeat:no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: cover
+	} #perl {
+		display: block;
+		margin: 0 auto
+	} #banner {
+		margin-top: 0 auto;
+		width: 100%;	
+	} p {
+		font: 20pt/1.4em Helvetica;
+		width: 768px;
+		margin: 100pt auto;
+		margin-top: 20pt;
+		color: darkblue;
+		text-align: center;
+	}  ul {
+ 		list-style-type: none;
+ 		margin: 0;
+ 		padding: 0;
+ 		overflow: hidden;
+ 		background-color: #ABE3E8;
+		font: 20pt/1.4em Helvetica;
+		width: 768px;
+		margin: 18pt auto;
+		color: darkblue;
+		text-align: center;
+	} ul li {
+  		float: left;
+		border-right: 1px solid #FFFFFF;
+	} ul li a{
+  		display: block;
+  		color: blue ;
+  		text-align: center;
+  		padding: 0px 25px 0px 25px;
+  		text-decoration: none;
+	} ul li a:hover {
+		background-color: cornflowerblue
+	} ul li a.active {
+ 		background-color: #04AA6D;
+	} #videocontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        video {
+            width: 190%;
+            max-width: 700px;
+        }
+
+</style>
+</head>
+
+<body>
+	<div id="page">
+	<img id="banner" src="neoway header.png"/>
+	<ul>
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="videopage.html">Video</a></li>
+	 </ul> 
+	<p> This video will go over the general purpose of this website (It differs from the contents of the home page for this reason).</p>
+	</div>
+	<div id="videocontainer">
+	 <video style="width:200%; 
+                               max-width: 700px;" controls>
+  		<source src="testvideo.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video> 
+	</div>
+</body>
+</html>
