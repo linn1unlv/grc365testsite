@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>portfoliopage</title>
+<style>
+	@font-face {
+		font-family: Helvetica
+		src: url("Helvetica.ttf")
+	} #page {
+		height: 1400px;
+		width: 1000px;
+		margin: 0 auto;
+		// padding: 48px;
+	} body {
+		background-image: url("test site background.png");
+		background-repeat:no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: cover
+	} #perl {
+		display: block;
+		margin: 0 auto
+	} #banner {
+		// margin: 0 auto;
+		width: 100%;
+		height: auto
+	} p {
+		font: 20pt/1.4em Helvetica;
+		width: 768px;
+		margin: 100pt auto;
+		margin-top: 20pt;
+		color: darkblue;
+		text-align: center;
+	} ul {
+ 		list-style-type: none;
+ 		margin: 0;
+ 		padding: 0;
+ 		overflow: hidden;
+ 		background-color: #ABE3E8;
+		font: 20pt/1.4em Helvetica;
+		width: 768px;
+		margin: 18pt auto;
+		color: darkblue;
+		text-align: center;
+	} ul li {
+  		float: left;
+		border-right: 1px solid #FFFFFF;
+	} ul li a{
+  		display: block;
+  		color: blue ;
+  		text-align: center;
+  		padding: 0px 25px 0px 25px;
+  		text-decoration: none;
+	} ul li a:hover {
+		background-color: cornflowerblue
+	} ul li a.active {
+ 		background-color: #04AA6D;
+	} p {
+		font: 20pt/1.4em Helvetica;
+		width: 768px;
+		margin: 18pt auto;
+		margin-top: 20pt;
+		color: darkblue;
+		text-align: center;
+	} h1 {
+		font: 40pt/1.4em Helvetica;
+		width: 768px;
+		margin: 18pt auto;
+		margin-top: 20pt;
+		color: darkblue;
+		text-align: center;
+	} #container {
+			width: 512px;
+			height: 512px;
+			border: 12px solid lightblue;
+			margin: 48px auto;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;alightnment-
+			baseline: center;
+	} img, .zoom {
+			width: 200px;
+			height: 200px;
+			transition: transform 0.05s;
+	} .zoom {
+			background-position: center;
+	} .zoom:hover {
+			background-size: 105%;
+			transition: background-size 0.5s;
+	} img:hover {
+			filter: opacity(80%);
+			// transform: scale(1.03);
+			transition: transform 0.5s;
+	} figure {
+			width: 200px;
+			height: 200px;
+			margin: 20px;
+			background: orange;
+			
+	} figcaption {
+			font: 12pt/1.4em "Helvetica";
+			color: darkblue;
+			text-align: center
+	} #textbox {
+			width: 1024px;
+			height: 928px;
+			margin: 0 auto;
+			display:flex;
+			justify-content: center
+	}
+</style>
+</head>
+<body>
+	<div id="page">
+	<img src="neoway header.png" width="0" height="0" id="banner">
+	<ul>
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="videopage.html">Video</a></li>
+  <li><a href="portfoliopage.html">Portfolio</a></li>
+		</ul>
+		<h1>Portfolio</h1>
+	<div id="textbox">
+	<figure>
+	
+		<a href="Accel Circuit.png"
+		   target="_blank">
+		<img src="thumbaccel.png"></a>
+		<figcaption>My Character Accel</figcaption>
+		
+		</figure>
+		<figure>
+	
+		<a href="fulgura disc 1.png"
+		   target="_blank">
+		<img src="thumbdisc.png"></a>
+		<figcaption>Mockup Music Disc</figcaption>
+		</figure>
+		<figure>
+	
+		<a href="aero background.png"
+		   target="_blank">
+		<img src="thumbaero.png"></a>
+		<figcaption>Stylized Background</figcaption>
+		</figure>
+	</div>
+	<img id="perl" src="perl.png"/>
+	</div>
+
+		
+		
+</body>
+</html>
