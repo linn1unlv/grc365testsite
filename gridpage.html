@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>tablespage</title>
+<title>gridpage</title>
 <style>
 	@font-face {
 		font-family: Helvetica
@@ -17,14 +17,14 @@
 		background-repeat:no-repeat;
 		background-attachment: scroll;
 		background-position: center;
-		background-size: cover;
+		background-size: cover
 	} #perl {
 		display: block;
-		margin: 0 auto;
+		margin: 0 auto
 	} #banner {
-		margin: 0 auto;
+		// margin: 0 auto;
 		width: 100%;
-		height: auto;
+		height: auto
 	} p {
 		font: 20pt/1.4em Helvetica;
 		width: 768px;
@@ -53,7 +53,7 @@
   		padding: 0px 25px 0px 25px;
   		text-decoration: none;
 	} ul li a:hover {
-		background-color: cornflowerblue;
+		background-color: cornflowerblue
 	} ul li a.active {
  		background-color: #04AA6D;
 	} p {
@@ -70,33 +70,22 @@
 		margin-top: 20pt;
 		color: darkblue;
 		text-align: center;
-	} h2 {
-		font: 40pt/1.4em Helvetica;
+	} main {
 		width: 768px;
-		margin: 18pt auto;
-		margin-top: 20pt;
-		color: darkblue;
-		text-align: center;
-	} td {
-		font: 20pt/1.4em Helvetica;
-		width: 768px;
-		margin: 100pt auto;
-		margin-top: 20pt;
-		color: darkblue;
-		text-align: center;
-	} table {
-		border: solid 1px #0015FF;
-		box-shadow: 2px 3px 6px darkblue;
-	} tr {
-		margin: 6px;
-	} tr:nth-child(odd) {
-		background-color: #B7DEFF
-	} 
-</style>
+		height: 768px;
+		border: 3px solid blue;
+		margin: 24px auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	} img:nth-child(4) {
+		grid-area: 1/2/4/3;
+	}
+	</style>
 </head>
+
 <body>
 	<div id="page">
-	<img src="neoway header.png" id="banner">
+	<img src="neoway header.png" width="0" height="0" id="banner">
 	<ul>
   <li><a href="homepage.html">Home</a></li>
   <li><a href="videopage.html">Video</a></li>
@@ -104,50 +93,14 @@
 	<li><a href="tablespage.html">Tables</a></li>
 	<li><a href="gridpage.html">Grid</a></li>
 		</ul>
-  <h1>Contributors</h1>
-
-<table style="width:100%">
-  <tr>
-    <td>Wave Sparks</td>
-    <td>L-X-NDR</td>
-    <td>Deora Circuit</td>
-	  <td>Quinn</td>
-  </tr>
-  <tr>
-    <td>Bulldough</td>
-    <td>Gracie</td>
-    <td>Roark</td>
-	  <td>Oro</td>
-  </tr>
-   <tr>
-    <td>Kirby</td>
-    <td>Camem</td>
-    <td>Star</td>
-	  <td>Buddy</td>
-  </tr>
-</table>
-		
-<h2>Support Tiers</h2>
-<table>
-  <tr>
-    <td>Tier 3</td>
-    <td>VIP Stickers</td>
-    <td>$1/Month</td>
-  </tr>
-  <tr>
-    <td>Tier 2</td>
-    <td>Exclusive Avatar Clothing</td>
-    <td>$3/Month</td>
-  </tr>
-  <tr>
-    <td>Tier 1</td>
-    <td>Special Aura Effects</td>
-    <td>$5/Month</td>
-	</tr>
-		</table>
+	<h1>Grid: Frutiger Aero Examples</h1>	
+	<main>
+		<img src="aerothumb1.jpg">
+		<img src="aerothumb2.jpg">
+		<img src="aerothumb3.jpg">
+		<img src="aerothumb4.jpg">
+	</main>
 	</div>
-	<div>
-	<img id="perl" src="perl.png"/>
-	</div>
+	<div><img id="perl" src="perl.png"/></div>
 </body>
 </html>
