@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>portfoliopage</title>
+<title>formpage</title>
 <style>
 	@font-face {
 		font-family: Helvetica
@@ -70,47 +70,40 @@
 		margin-top: 20pt;
 		color: darkblue;
 		text-align: center;
-	} #container {
-			width: 512px;
-			height: 512px;
-			border: 12px solid lightblue;
-			margin: 48px auto;
-			display: flex;
-			justify-content: center;
-			align-items: flex-start;alightnment-
-			baseline: center;
-	} img, .zoom {
-			width: 200px;
-			height: 200px;
-			transition: transform 0.05s;
-	} .zoom {
-			background-position: center;
-	} .zoom:hover {
-			background-size: 105%;
-			transition: background-size 0.5s;
-	} img:hover {
-			filter: opacity(80%);
-			// transform: scale(1.03);
-			transition: transform 0.5s;
-	} figure {
-			width: 200px;
-			height: 200px;
-			margin: 20px;
-			background: orange;
-			
-	} figcaption {
-			font: 12pt/1.4em "Helvetica";
-			color: darkblue;
-			text-align: center
-	} #textbox {
-			width: 1024px;
-			height: 928px;
-			margin: 0 auto;
-			display:flex;
-			justify-content: center
+	} form {
+		font:15pt/1.4em Helvetica;
+		color: azure;
+		text-align: center;
+		border: 1px solid #FF4F00;
+		background: #7AB2FF;
+		width: 100%;
+		height: 50%;
+		align-content: center;
+		place-items: center;
+		justify-content: center;
+		float: center;
+	} button {
+		font:15pt/1.4em Helvetica;
+		align-content: center;
+		margin: 20px auto;
+	} button a:hover {
+		background-color: cornflowerblue;
+	} #comments {
+		width: 500px;
+		height: 250px;
+	} input {
+		margin: 0 auto;
+		width: 500px;
+		height: 25px;
+	} text {
+		margin: 10px auto;
 	}
+		
+	
+
 </style>
 </head>
+
 <body>
 	<div id="page">
 	<img src="neoway header.png" width="0" height="0" id="banner">
@@ -122,35 +115,22 @@
 	<li><a href="gridpage.html">Grid</a></li>
 	<li><a href="formpage.html">Form</a></li>
 		</ul>
-		<h1>Portfolio</h1>
-	<div id="textbox">
-	<figure>
-	
-		<a href="Accel Circuit.png"
-		   target="_blank">
-		<img src="thumbaccel.png"></a>
-		<figcaption>My Character Accel</figcaption>
 		
-		</figure>
-		<figure>
-	
-		<a href="fulgura disc 1.png"
-		   target="_blank">
-		<img src="thumbdisc.png"></a>
-		<figcaption>Mockup Music Disc</figcaption>
-		</figure>
-		<figure>
-	
-		<a href="aero background.png"
-		   target="_blank">
-		<img src="thumbaero.png"></a>
-		<figcaption>Stylized Background</figcaption>
-		</figure>
-	</div>
-	<img id="perl" src="perl.png"/>
-	</div>
+	  <h1> Contact </h1>
+	 <p> Submit any concerns, comments, or questions below!</p>
+<form action="https://formsubmit.co/linn1@unlv.nevada.edu" method="POST">
 
-		
-		
+  <label for="username">Username</label><br>
+  <input type="text" id="username" name="username"><br><br>
+  <label for="email">Email</label><br>
+  <input type="text" id="email" name="email"><br><br>
+  <label for="subject">Subject</label><br>
+  <input type="text" id="subject" name="subject"><br><br>
+  <label for="comments">Comments</label><br>
+  <input type="text" id="comments" name="comments"><br><br>
+    <button type="submit">Submit Feedback</button><br>
+</form>
+<img id="perl" src="perl.png"/>
+	</div>
 </body>
 </html>
