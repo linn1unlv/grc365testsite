@@ -5,11 +5,11 @@
 <title>portfoliopage</title>
 <style>
 	@font-face {
-		font-family: Helvetica
+		font-family: Helvetica;
 		src: url("Helvetica.ttf")
 	} #page {
 		height: 1400px;
-		width: 1000px;
+		width: 1400px;
 		margin: 0 auto;
 		// padding: 48px;
 	} body {
@@ -22,9 +22,11 @@
 		display: block;
 		margin: 0 auto
 	} #banner {
-		// margin: 0 auto;
-		width: 100%;
-		height: auto
+		margin: 0 auto;
+		width: 50%;
+		height: auto;
+		display: flex;
+		align-content: center;
 	} p {
 		font: 20pt/1.4em Helvetica;
 		width: 768px;
@@ -33,25 +35,28 @@
 		color: darkblue;
 		text-align: center;
 	} ul {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
  		list-style-type: none;
- 		margin: 0;
- 		padding: 0;
  		overflow: hidden;
- 		background-color: #ABE3E8;
 		font: 20pt/1.4em Helvetica;
-		width: 768px;
-		margin: 18pt auto;
+		width: auto;
+		margin: 0;
+		padding: 0;
+		grid-row-gap: 5px;
+		grid-column-gap: 5px;
 		color: darkblue;
 		text-align: center;
 	} ul li {
   		float: left;
 		border-right: 1px solid #FFFFFF;
 	} ul li a{
-  		display: block;
+  		display: grid;
   		color: blue ;
   		text-align: center;
-  		padding: 0px 25px 0px 25px;
   		text-decoration: none;
+		background-color: #ABE3E8;
+		grid-row-gap: 5px;
 	} ul li a:hover {
 		background-color: cornflowerblue
 	} ul li a.active {
@@ -120,6 +125,7 @@
   <li><a href="portfoliopage.html">Portfolio</a></li>
 	<li><a href="tablespage.html">Tables</a></li>
 	<li><a href="gridpage.html">Grid</a></li>
+	<li><a href="typefacespage.html">Text</a></li>
 	<li><a href="formpage.html">Form</a></li>
 		</ul>
 		<h1>Portfolio</h1>

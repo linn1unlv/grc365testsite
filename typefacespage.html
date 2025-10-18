@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>typefacespage</title>
+</head>
+<style>
+	@font-face {
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif", Frutiger Light;
+		src: url("Helvetica.ttf");
+		src: url("Frutiger Light.ttf")
+	} #page {
+		height: 800px;
+		width: 1000px;
+		margin: 0 auto;
+		// padding: 48px;
+	} body {
+		background-image: url("test site background.png");
+		background-repeat:no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: cover
+	} #perl {
+		display: block;
+		margin: 0 auto
+	} #banner {
+		margin: 0 auto;
+		width: 50%;
+		height: auto;
+		display: flex;
+		align-content: center;
+	} p {
+		font: 20pt/1.4em Helvetica;
+		width: 768px;
+		margin: 100pt auto;
+		margin-top: 20pt;
+		color: darkblue;
+		text-align: center;
+	} ul1 {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+ 		list-style-type: none;
+ 		overflow: hidden;
+		font: 20pt/1.4em Helvetica;
+		width: auto;
+		margin: 0;
+		padding: 0;
+		grid-row-gap: 5px;
+		grid-column-gap: 5px;
+		color: darkblue;
+		text-align: center;
+	} ul1 li {
+  		float: left;
+		border-right: 1px solid #FFFFFF;
+	} ul1 li a{
+  		display: grid;
+  		color: blue ;
+  		text-align: center;
+  		text-decoration: none;
+		background-color: #ABE3E8;
+		grid-row-gap: 5px;
+	} ul1 li a:hover {
+		background-color: cornflowerblue
+	} ul1 li a.active {
+ 		background-color: #04AA6D;
+	} p {
+		font: 20pt/1.4em Frutiger Light;
+		src:url("Frutiger Light.ttf");
+		width: 768px;
+		margin: 18pt auto;
+		margin-top: 20pt;
+		color: darkblue;
+		text-align: left;
+	} h1 {
+		font: 40pt/1.4em Helvetica;
+		width: 768px;
+		margin: 18pt auto;
+		margin-top: 20pt;
+		color: darkblue;
+		text-align: center;
+	} ul2 {
+ 		list-style-type: circle;
+ 		overflow: hidden;
+		font: 20pt/1.4em Frutiger Light;
+		src:url("Frutiger Light.ttf");
+		width: auto;
+		margin: 0;
+		color: darkblue;
+		text-align: left;
+		float: left;
+		flex-wrap: wrap
+	} ul2 li {
+  		float: left;
+		border-right: 1px solid #FFFFFF;
+		font: 20pt/1.4em Frutiger Light;
+		src:url("Frutiger Light.ttf");
+	} #frutiger {
+		float: right;
+		display:flex;
+		width: 384px;
+		flex-wrap: wrap;
+		padding-top: 25px;
+	} .container {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	} .imagecontainer {
+		display: flex;
+		float: center;
+		width: 40%;
+	} .texts {
+		display: flex;
+		float: center;
+		padding-left: 20px;
+   		padding-top: 20%;
+		font: 20pt/1.4em Frutiger Light;
+		src:url("Frutiger Light.ttf");
+		overflow: auto
+	} p2 {
+		font: 15pt/1.4em Frutiger Light;
+		font-style: italic;
+		src:url("Frutiger Light.ttf");
+		width: 768px;
+		margin: 18pt auto;
+		margin-top: 20pt;
+		color: darkblue;
+		text-align: center;
+		display: flex;
+		justify-content: center
+	}
+</style>
+<body>
+<div id="page">
+	<img src="neoway header.png" width="0" height="0" id="banner">
+	<ul1>
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="videopage.html">Video</a></li>
+  <li><a href="portfoliopage.html">Portfolio</a></li>
+	<li><a href="tablespage.html">Tables</a></li>
+	<li><a href="gridpage.html">Grid</a></li>
+	<li><a href="typefacespage.html">Text</a></li>
+	<li><a href="formpage.html">Form</a></li>
+		</ul1>
+	<h1> Frutiger Aero </h1>
+	
+	<div id="container">
+	<div id="texts">
+	<p>
+		The aesthetic is quickly explained by <a href="https://cari.institute/aesthetics/frutiger-aero">CARI, or the Consumer Aesthetics Research Institute</a> including elements such as:
+		<div id="imagecontainer">
+		<img id="frutiger" src="over-50-frutiger-aero-wallpapers-2008ify-your-pc-v0-ja2v6kc2nz9b1-2386252494.jpg">
+		</div>
+		<br>
+		<ul2>
+		<li>"Skeumorphism in UI/UX design</li><br>
+		<li>Glossy Design</li><br>
+		<li>Frutiger/humanist type sans-serif typefaces</li><br>
+		<li>Tertiary color palettes</li><br>
+		<li>Glassy/transparent materials</li><br>
+		<li>Photographs of aurora borealis</li><br>
+		<li>Bokeh Photography</li><br>
+		<li>Macro photographs of grass"</li><br>
+		</ul2>
+		
+		</p>
+		
+	</div>
+	</div>
+	</div>
+	<p> Frutiger Aero invokes the feeling of harmony, using both clean, white, and overall minimalist technology and architecture amidst open grassy fields and oceans.<br>
+		It had its start around the early 2000's, especially with Apple's newly debuted iPhone. Later on, gaming consoles like Nintendo's Wii and Sony's PlayStation 2/3 and its handheld, the PSP, became large contributions to the aesthetic.</p>
+	<img id="perl" src="perl.png"/>
+	<p2>Informational text courtesy of CARI institution.</p2>
+</body>
+</html>
