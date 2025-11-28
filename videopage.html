@@ -9,7 +9,7 @@
 		src: url("Helvetica.ttf")
 	} #page {
 		height: 700px;
-		width: 1400px;
+		width: 1000px;
 		margin: 0 auto;
 		// padding: 48px;
 	} body {
@@ -20,7 +20,8 @@
 		background-size: cover
 	} #perl {
 		display: block;
-		margin: 0 auto
+		margin: 0 auto;
+		cursor: pointer
 	} #banner {
 		margin: 0 auto;
 		width: 50%;
@@ -64,6 +65,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+			padding-bottom: 20px;
         }
 
         video {
@@ -72,6 +74,13 @@
         }
 
 </style>
+	<script>
+$(function() {
+		$('#perl').click(function) {
+			$("#perl").fadeOut(1500);
+		}
+			};
+</script>
 </head>
 
 <body>
@@ -87,15 +96,15 @@
 	<li><a href="formpage.html">Form</a></li>
 	 </ul> 
 	<p> This video will go over the general purpose of this website (It differs from the contents of the home page for this reason).</p>
-	</div>
 	<div id="videocontainer">
 	 <video style="width:200%; 
                                max-width: 700px;" controls>
   		<source src="testvideo.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 	</video>
-		
 	</div>
-	<img id="perl" src="perl.png"/>
+		<img id="perl" src="perl.png"/>
+	</div>
+	
 </body>
 </html>

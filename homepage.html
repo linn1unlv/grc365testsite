@@ -9,7 +9,7 @@
 		src: url("Helvetica.ttf")
 	} #page {
 		max-height: 1400px;
-		max-width: 1400px;
+		max-width: 1000px;
 		height: 1000px;
 		margin: 0 auto;
 		// padding: 48px;
@@ -92,8 +92,22 @@
 		}
 	} #perlanimation {
 		padding-bottom: 45px
-	}
+	} button {
+		display: block;
+		text-align: center;
+		justify-content: center;
+		align-content: center;
+		cursor: pointer;
+		margin-top: 20px
+		
+	} 
 </style>
+<script type="text/javascript">
+$(function() {
+		$('#erase').click(function() {
+			$("#perl").fadeOut(1500);
+			});
+</script>
 </head>
 
 <body>
@@ -113,9 +127,15 @@
 	<p> Welcome to the world of NeoWay. We are currently developing our website, so stay tuned! In the future, you may come to see a wide variety of social features.</p>
 	<p> In the meantime, go around our beautiful town! We have many, MANY eateries awaiting your patronage - hot and ready pizzas at any time of day, fine dining with the freshest seafood, and cafes that are sure to give you some extra pep in your step!</p>
 	<p> Meet the locals and visit our wonderful attractions, like our famous beach and our fiery colosseum, full of battle and sport! We pride ourselves on not only our commercialism, but the tightknit communities that keep our town afloat. See the stars and the sea, love all there is to be!</p>
-	<div id="perlanimation">
+		<div style="display: grid; place-items: center;">
+			<button id="erase"> Click to Erase Perl!</button>
+		</div>
+	<div id="perlanimation" style="display: grid; place-items: center;
+			padding: 45px">
     <img id="perl" src="perl.png"/>
+		<br>
 	</div>
 	</div>
+
 </body>
 </html>
